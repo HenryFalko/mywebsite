@@ -712,10 +712,29 @@ section,
 }
 
 .skills .progress-bar {
-  width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+.skills .progress-bar[aria-valuenow="100"] {
+  width: 100%;
+}
+
+.skills .progress-bar[aria-valuenow="90"] {
+  width: 90%;
+}
+
+.skills .progress-bar[aria-valuenow="80"] {
+  width: 80%;
+}
+
+.skills .progress-bar[aria-valuenow="75"] {
+  width: 75%;
+}
+
+.skills .progress-bar[aria-valuenow="55"] {
+  width: 55%;
 }
 
 /*--------------------------------------------------------------
